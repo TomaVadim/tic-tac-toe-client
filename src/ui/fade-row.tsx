@@ -46,8 +46,8 @@ export function FadeRow({
   return (
     <motion.div
       initial="hidden"
-      whileInView="show" // Заменено с animate на whileInView
-      viewport={{ once: true, amount: 0.5 }} // Добавлены настройки для viewport
+      whileInView="show"
+      viewport={{ once: true, amount: 0.5 }}
       variants={FADE_ANIMATION_VARIANTS}
     >
       {children}

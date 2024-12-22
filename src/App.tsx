@@ -1,6 +1,6 @@
 // import { useUserInfo } from "./api/query-hooks/use-user-info";
 // import { Loader } from "./ui/loader";
-import { PropsWithChildren } from "react";
+import { JSX, PropsWithChildren } from "react";
 import { AppProvider } from "./providers/app-provider";
 
 export const App = ({ children }: PropsWithChildren): JSX.Element => {

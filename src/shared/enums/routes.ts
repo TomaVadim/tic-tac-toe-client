@@ -1,5 +1,5 @@
 export const enum ROUTES {
-  HOME = "/home",
+  MAIN = "/main",
   LOADING = "/",
   NOT_FOUND = "*",
 }

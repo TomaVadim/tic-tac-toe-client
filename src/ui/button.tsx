@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, CSSProperties, ReactNode } from "react";
+import { ComponentPropsWithoutRef, CSSProperties, JSX, ReactNode } from "react";
 
 import { motion } from "framer-motion";
 import { HTMLMotionProps } from "motion/react";

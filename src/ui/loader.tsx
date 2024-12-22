@@ -1,4 +1,5 @@
 import { css, keyframes } from "@emotion/css";
+import { JSX } from "react";
 
 export type LoaderSize = "small" | "medium" | "large";
 

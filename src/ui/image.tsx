@@ -1,5 +1,5 @@
 import { Loader, LoaderSize } from "@/ui/loader";
-import { CSSProperties, HTMLAttributes, useEffect, useState } from "react";
+import { CSSProperties, HTMLAttributes, JSX, useEffect, useState } from "react";
 
 import { css, cx } from "@emotion/css";
 
