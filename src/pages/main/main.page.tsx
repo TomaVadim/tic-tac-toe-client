@@ -22,6 +22,21 @@ const MainPage = (): JSX.Element => {
   //   });
   // };
 
+  function initiateDownload() {
+    const params = {
+      url: "https://i.ibb.co/yRCB6v8/scren.png",
+      file_name: "template.png",
+    };
+
+    WebApp.downloadFile(params, (accepted) => {
+      if (accepted) {
+        alert("Download started!");
+      } else {
+        alert("Download was canceled.");
+      }
+    });
+  }
+
   return (
     <Flex direction="column" gap={20} pt={100} pl={20} pr={20}>
       <Flex alignItems="center" gap={10}>
@@ -45,10 +60,7 @@ const MainPage = (): JSX.Element => {
         Add to home screen
       </Button>
 
-      <Button
-        onClick={() => WebApp.downloadFile({})}
-        className={css({ color: "red" })}
-      >
+      <Button onClick={initiateDownload} className={css({ color: "red" })}>
         Download file
       </Button>
 
