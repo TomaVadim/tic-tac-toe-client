@@ -6,10 +6,15 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./index.css";
 import { RouterProvider } from "react-router";
 import { AppRouter } from "./routes/app-router.tsx";
+import { isMobile } from "./utils/is-mobile.ts";
 
 export const WebApp = window.Telegram.WebApp;
 
-WebApp.requestFullscreen();
+if (isMobile()) {
+  WebApp.requestFullscreen();
+}
+
+WebApp.disableVerticalSwipes();
 WebApp.expand();
 
 const queryClient = new QueryClient();
