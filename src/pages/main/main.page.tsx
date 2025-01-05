@@ -4,6 +4,9 @@ import { useUserInfo } from "@/api/query-hooks/use-user-info";
 import { UserAvatar } from "@/components/user-avatar";
 import { Flex } from "@/ui/flex";
 import { Typography } from "@/ui/typography";
+import { Button } from "@/ui/button";
+import { css } from "@emotion/css";
+import { WebApp } from "@/main";
 // import { Button } from "@/ui/button";
 // import { SocketContext } from "@/contexts/socket.context";
 
@@ -34,6 +37,13 @@ const MainPage = (): JSX.Element => {
           </Typography>
         </Flex>
       </Flex>
+
+      <Button
+        onClick={() => WebApp.addToHomeScreen()}
+        className={css({ color: "red" })}
+      >
+        Add to home screen
+      </Button>
 
       {/* <Button onClick={handleCreateRoom}>Create new room</Button> */}
     </Flex>
