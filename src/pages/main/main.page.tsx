@@ -45,6 +45,13 @@ const MainPage = (): JSX.Element => {
         Add to home screen
       </Button>
 
+      <Button
+        onClick={() => WebApp.downloadFile({})}
+        className={css({ color: "red" })}
+      >
+        Download file
+      </Button>
+
       {/* <Button onClick={handleCreateRoom}>Create new room</Button> */}
     </Flex>
   );
